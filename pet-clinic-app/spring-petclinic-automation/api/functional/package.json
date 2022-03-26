@@ -8,12 +8,16 @@
     "jest-extended": "^0.11.2",
     "jest-html-reporters": "^1.1.6",
     "log4js": "^6.1.0",
-    "unirest": "^0.6.0"
+    "unirest": "^0.6.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Breandan McClure",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
